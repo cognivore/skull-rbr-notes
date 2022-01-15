@@ -1,0 +1,41 @@
+;
+; File:         strings.ini
+; Version:      1.0
+; Date:         2012-04-01
+;
+;
+; Language:     english
+; Encoding:     UTF-8
+;
+; We keep each section sorted to ease the tracking of changes and translation.
+;
+
+[STRINGS]
+LEFT=Flat Left
+Right=Flat Right
+TIGHTENS=Tightens
+FLAT_LEFT=6 Left
+FLAT_RIGHT=6 Right
+T6=6
+SIX_LEFT=5 Left
+SIX_RIGHT=5 Right
+FIVE_LEFT=4 Left
+FIVE_RIGHT=4 Right
+T5=5
+FOUR_LEFT=3 Left
+FOUR_RIGHT=3 Right
+T4=4
+THREE_LEFT=2 Left
+THREE_RIGHT=2 Right
+T3=3
+TWO_LEFT=1 Left
+TWO_RIGHT=1 Right
+SQUARE_LEFT=Square Left
+SQUARE_RIGHT=Square Right
+T_SQ=Square
+ONE_LEFT=HP Left
+ONE_RIGHT=HP Right
+T1=1
+THP=HP
+LEFT_RIGHT=Left-Right
+RIGHT_LEFT=Right-Left

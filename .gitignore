@@ -2,6 +2,7 @@
 !.gitignore
 !.gitattributes
 !.mk_*
+!.ds_store
 !README.md
 !NotesLibrary
 !NotesLibrary/*

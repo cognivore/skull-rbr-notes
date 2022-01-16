@@ -1,0 +1,17 @@
+if [[ -z "$1" ]]; then
+  echo "Provide file name with all the call-outs padded by silence"
+  exit 228
+fi
+
+mkdir .codriver
+sox "$1" .codriver/callout.ogg silence 1 0.2 1% 1 0.2 1% : newfile : restart
+
+i=0
+for x in .codriver/*; do
+  ((i++))
+  padded_i=$(printf "%03d" $i)
+  target=$(sed "${i}q;d" .template/template.listing)
+  if [[ ! -z "${target}" ]]; then
+    mv -v ".codriver/callout${padded_i}.ogg" ".codriver/${target}"
+  fi
+done

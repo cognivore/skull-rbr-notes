@@ -1,0 +1,5 @@
+mkdir .template
+ls -1 | cut -d. -f1 | tr _ \   > .template/readout.txt
+ls -1 > .template/template.listing
+sox -n -r 11025 -c 1 .template/silence.ogg trim 0.0 3.0
+sox $(for x in *ogg; do echo -n "$x .template/silence.ogg "; done) .template/template.ogg

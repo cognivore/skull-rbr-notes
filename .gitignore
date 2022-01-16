@@ -1,7 +1,12 @@
 *
 !.gitignore
 !.gitattributes
+!.mk_*
 !README.md
+!NotesLibrary
+!NotesLibrary/*
+!NotesLibrary/*/*
+!NotesLibrary/*/*/*
 !Audio
 !Audio/Game
 !Audio/Game/Go.wav
@@ -538,6 +543,3 @@
 !Plugins/Pacenote/sounds/SabrinaInkwell3/wide.ogg
 !Plugins/Pacenote/sounds/SabrinaInkwell3/widens.ogg
 !Plugins/Pacenote/sounds/SabrinaInkwell3/wideout.ogg
-!NotesLibrary
-!NotesLibrary/*
-!NotesLibrary/*/*

@@ -292,6 +292,8 @@
 !Plugins/Pacenote/language/english/strings.ini
 !Plugins/Pacenote/PaceNote.ini
 !Plugins/Pacenote/sounds
+!Plugins/Pacenote/Scripts/
+!Plugins/Pacenote/Scripts/*
 !Plugins/Pacenote/sounds/SabrinaInkwell3
 !Plugins/Pacenote/sounds/SabrinaInkwell3/1.ogg
 !Plugins/Pacenote/sounds/SabrinaInkwell3/10.ogg

@@ -3,12 +3,12 @@ if [[ -z "$1" ]]; then
   exit 228
 fi
 
-_default_in_tolerance="0.44%"
+_default_in_tolerance="0.1%"
 if [[ -n "$2" ]]; then
   _default_in_tolerance="$2"
 fi
 
-_default_out_tolerance="1%"
+_default_out_tolerance="0.69%"
 if [[ -n "$3" ]]; then
   _default_out_tolerance="$3"
 fi
@@ -16,7 +16,7 @@ fi
 echo "We are about to split by silence with in noise tolerance at ${_default_in_tolerance} and out noise tolerance at ${_default_out_tolerance}."
 
 mkdir .codriver
-sox "$1" .codriver/callout.ogg silence 1 0.2 "$_default_out_tolerance" 1 0.2 "$_default_out_tolerance" : newfile : restart
+sox "$1" .codriver/callout.ogg silence 1 0.1 "$_default_out_tolerance" 1 0.33 "$_default_out_tolerance" : newfile : restart
 
 i=0
 for x in .codriver/*; do
